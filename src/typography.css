@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Campton';
+  src: local('Campton'),
+    url('./assets/fonts/Campton-Bold.woff2') format('woff2'), local('Campton'),
+    url('./assets/fonts/Campton-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Campton';
+  src: local('Campton'),
+    url('./assets/fonts/Campton-Light.woff2') format('woff2'), local('Campton'),
+    url('./assets/fonts/Campton-Light.woff') format('woff');
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Neue Metana';
+  src: url('./assets/fonts/NeueMetana-Bold.woff2') format('woff2'),
+    url('./assets/fonts/NeueMetana-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Neue Metana';
+  src: url('./assets/fonts/NeueMetana-Regular.woff2') format('woff2'),
+    url('./assets/fonts/NeueMetana-Regular.woff') format('woff');
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Neue Metana';
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 81px;
+  color: var(--c-blue-txt);
+  /* font-size: 4.688vw; */
+}
+
+h2 {
+  color: white;
+  font-size: 52px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Campton';
+}

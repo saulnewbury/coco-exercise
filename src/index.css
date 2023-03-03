@@ -1,3 +1,18 @@
+:root {
+  --c-orange-bg: hsla(14, 100%, 65%, 1);
+  --c-blue-bg: hsla(228, 77%, 40%, 1);
+  --c-blue-txt: hsla(231, 91%, 56%, 1);
+  --c-yellow-txt: hsla(39, 100%, 66%, 1);
+
+  --indent: 63px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +20,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: black;
 }

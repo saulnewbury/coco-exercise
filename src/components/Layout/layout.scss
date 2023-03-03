@@ -1,0 +1,12 @@
+.layout {
+  background-color: black;
+  position: relative;
+
+  .black-strip {
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+  }
+}

@@ -1,0 +1,43 @@
+.topbar {
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  z-index: 100;
+  width: calc(100% - 4px);
+  height: 160px;
+  background-color: var(--c-orange-bg);
+
+  .topbar-inner {
+    padding: 0 var(--indent);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      img {
+        cursor: pointer;
+        width: 100px;
+      }
+    }
+
+    .nav {
+      font-family: 'Neue Metana';
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+
+      & > div {
+        cursor: pointer;
+      }
+
+      & > :not(:last-child) {
+        margin-right: 44px;
+      }
+
+      .language span:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+  }
+}
