@@ -1,9 +1,12 @@
 .home {
-  margin-top: 160px;
-  background-image: url('../../assets/images/bg.jpg');
+  margin-top: 156.5px;
+  position: relative;
+  background-image: url('../../assets/images/home-bg-mq.webp');
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: cover;
+  background-position-y: center;
+  background-size: 110%;
+  // Mafalda has stretched the image?
 
   .home-inner {
     padding: 0 var(--indent);
@@ -17,7 +20,7 @@
     }
 
     h1 {
-      margin-top: 120px;
+      margin-top: 160px;
       margin-bottom: 15px;
     }
 
@@ -62,6 +65,10 @@
             .number {
               width: 100%;
               animation: rotation 5s infinite linear;
+
+              img {
+                margin: auto;
+              }
             }
 
             @keyframes rotation {

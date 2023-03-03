@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-inner">
         <div className="info border mbr">
-          <div className="la-campanya">
+          <div>
             <div className="title">
               <h3>La Campanya</h3>
             </div>
@@ -24,7 +24,7 @@ const Footer = () => {
               <p>El Manifest</p>
             </div>
           </div>
-          <div className="com-participar">
+          <div>
             <div className="title">
               <h3>Com Participar</h3>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <p>Ruta de Comerç Responsable</p>
             </div>
           </div>
-          <div className="premis">
+          <div>
             <div className="title">
               <h3>Premis</h3>
             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
               <p>Guanyadors</p>
             </div>
           </div>
-          <div className="servei-personalitzat">
+          <div>
             <div className="title">
               <h3>Servei Personalitzat</h3>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
               <p>Qüestionari</p>
             </div>
           </div>
-          <div className="comparteix">
+          <div>
             <div className="title">
               <h3>Comparteix</h3>
             </div>
@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="perfil">
+          <div>
             <div className="title">
               <h3>Perfil</h3>
             </div>

@@ -1,8 +1,8 @@
 :root {
-  --c-orange-bg: hsla(14, 100%, 65%, 1);
-  --c-blue-bg: hsla(228, 77%, 40%, 1);
-  --c-blue-txt: hsla(231, 91%, 56%, 1);
-  --c-yellow-txt: hsla(39, 100%, 66%, 1);
+  --orange: hsla(14, 100%, 65%, 1);
+  --blue-dark: hsla(228, 77%, 40%, 1);
+  --blue-light: hsla(231, 91%, 56%, 1);
+  --yellow: hsla(39, 100%, 66%, 1);
 
   --indent: 63px;
 }
@@ -11,6 +11,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
 }
 
 body {

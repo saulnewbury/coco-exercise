@@ -8,8 +8,8 @@ import ProfileIcon from '../../assets/images/profile-icon.svg'
 
 const Topbar = () => {
   return (
-    <div className="topbar border mbr">
-      <div className="topbar-inner ">
+    <div className="topbar">
+      <div className="topbar-inner mbr">
         <div className="logo">
           <img src={Logo} alt="Logo" />
         </div>

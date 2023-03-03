@@ -8,9 +8,9 @@ import Footer from '../Footer/Footer'
 const Layout = () => {
   return (
     <div className="layout border">
-      <Outlet />
       <div className="black-strip"></div>
       <Topbar />
+      <Outlet />
       <Footer />
     </div>
   )

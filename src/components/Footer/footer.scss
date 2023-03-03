@@ -1,31 +1,36 @@
 .footer {
   .footer-inner {
     display: flex;
-    color: var(--c-yellow-txt);
+    color: var(--yellow);
 
     .info {
-      background-color: var(--c-blue-bg);
+      background-color: var(--blue-dark);
       padding: var(--indent);
       display: flex;
       justify-content: space-between;
       flex-grow: 1;
 
       & > * {
-        & .title {
+        .title {
           margin-bottom: 20px;
           text-transform: uppercase;
+
+          h3 {
+            font-size: 14px;
+          }
         }
 
         & .links {
           p {
+            font-size: 14px;
             cursor: pointer;
-            line-height: 32px;
+            line-height: 28px;
             font-weight: 500;
           }
 
           .icons {
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 10px;
             display: flex;
             justify-content: space-between;
             width: 140px;
@@ -37,7 +42,7 @@
     .brand {
       padding: var(--indent);
       flex-basis: 12.66666%;
-      background-color: var(--c-blue-bg);
+      background-color: var(--blue-dark);
       display: flex;
       align-items: center;
       justify-content: center;
