@@ -1,5 +1,5 @@
 .la-campanya {
-  margin-top: 157px;
+  margin-top: var(--content-margin-top);
 
   .header {
     background-image: url('../../assets/images/la-campanya-bg-mq.webp');
@@ -73,5 +73,11 @@
         margin-bottom: 160px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .la-campanya .header {
+    background-size: cover;
   }
 }

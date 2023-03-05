@@ -1,11 +1,11 @@
 .home {
-  margin-top: 156.5px;
+  margin-top: var(--content-margin-top);
   position: relative;
   background-image: url('../../assets/images/home-bg-mq.webp');
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-size: 110%;
+  background-size: cover;
   // Mafalda has stretched the image?
 
   .home-inner {

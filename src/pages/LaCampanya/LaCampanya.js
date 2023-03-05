@@ -28,13 +28,18 @@ const LaCampanya = () => {
           <p>
             Com a consumidor tenim molt més poder del que ens creiem. Pots de
             canviar el mon, per a millor i, malauradament, per a pitjor. Sense
-            pressió, eh? El que separa un camí de l’altre es el coneixement i
-            des de COCO volem que aquest coneixement estigui a l’abast de tothom
-            per a que poguem prendre millors decisions i en conseqüència fer que
-            les marques també actuïn amb consciència i ens donguin millors
-            productes i serveis. Un futur millor encara és possible i només si
-            anem tots a la una, consumidors i marques, arribarem allà. T’hi
-            apuntes?
+            pressió, eh?
+            <br />
+            <br />
+            El que separa un camí de l’altre es el coneixement i des de COCO
+            volem que aquest coneixement estigui a l’abast de tothom per a que
+            poguem prendre millors decisions i en conseqüència fer que les
+            marques també actuïn amb consciència i ens donguin millors productes
+            i serveis.
+            <br />
+            <br />
+            Un futur millor encara és possible i només si anem tots a la una,
+            consumidors i marques, arribarem allà. T’hi apuntes?
           </p>
         </div>
       </section>
