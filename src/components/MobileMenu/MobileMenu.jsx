@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import './mobile-menu.scss'
 
 import { Link } from 'react-router-dom'
@@ -9,32 +9,47 @@ import gsap from 'gsap'
 
 const MobileMenu = ({ open }) => {
   const wrapper = useRef()
-  const i = useRef(false)
+  const firstTime = useRef(true)
+  // const firstTime = !wrapper.current
+  // const firstTime = useRef(true)
 
-  useEffect(() => {
-    if (!i.current) {
-      i.current = true
+  useLayoutEffect(() => {
+    if (firstTime.current) {
+      firstTime.current = false
+      if (open) {
+        gsap.set('.row', { xPercent: -102 })
+      } else {
+        gsap.set('.row', { xPercent: -0 })
+      }
       return
     }
 
     if (open) {
-      gsap.to('.row', {
-        xPercent: 100,
-        stagger: { stagger: 0.05, amount: 0.4 }
-      })
+      gsap.fromTo(
+        '.row',
+        { xPercent: -102 },
+        {
+          xPercent: 0,
+          stagger: { stagger: 0.05, amount: 0.4 }
+        }
+      )
       gsap.to('.mobile-menu', {
         backgroundColor: 'hsla(0, 0%, 0%, 1)'
       })
     } else {
-      gsap.to('.row', {
-        xPercent: -100,
-        stagger: { stagger: 0.005, amount: 0.4 }
-      })
+      gsap.fromTo(
+        '.row',
+        { xPercent: 0 },
+        {
+          xPercent: -102,
+          stagger: { stagger: 0.005, amount: 0.4 }
+        }
+      )
       gsap.to('.mobile-menu', {
         backgroundColor: 'hsla(0, 0%, 0%, 0)'
       })
     }
-  }, [open])
+  }, [open, firstTime])
 
   return (
     // ${open ? 'open' : ''}
