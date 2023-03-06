@@ -6,7 +6,7 @@ import MenuToggleBtn from '../../assets/images/menu-toggle-btn.svg'
 import ScannerIcon from '../../assets/images/scanner-icon.svg'
 import ProfileIcon from '../../assets/images/profile-icon.svg'
 
-const Topbar = () => {
+const Topbar = ({ toggleMobileMenu }) => {
   return (
     <div className="topbar">
       <div className="topbar-inner mbr">
@@ -18,7 +18,11 @@ const Topbar = () => {
             <span>ES</span> | <span>CAT</span>
           </div>
           <div className="menu-toggle-btn">
-            <img src={MenuToggleBtn} alt="Menu toggle button" />
+            <img
+              src={MenuToggleBtn}
+              alt="Menu toggle button"
+              onClick={toggleMobileMenu}
+            />
           </div>
           <div className="document-scanner">
             <img src={ScannerIcon} alt="Scanner Icon" />

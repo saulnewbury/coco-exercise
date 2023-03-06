@@ -36,7 +36,10 @@ const Home = () => {
         <div className="explained">
           <div className="explained-inner">
             {arr.map((el, idx) => (
-              <div key={el} className={`item ${idx % 2 === 0 ? 'odd' : ''}`}>
+              <div
+                key={`${el + idx}`}
+                className={`item ${idx % 2 === 0 ? 'odd' : ''}`}
+              >
                 <div className="heading">
                   <div className="number">
                     <img src={el.numImg} alt="Number corrosponding to part" />
