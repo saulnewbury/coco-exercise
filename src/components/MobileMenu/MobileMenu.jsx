@@ -17,9 +17,9 @@ const MobileMenu = ({ open }) => {
     if (firstTime.current) {
       firstTime.current = false
       if (open) {
-        gsap.set('.row', { xPercent: -102 })
+        gsap.set('.row', { xPercent: -102, opacity: 0 })
       } else {
-        gsap.set('.row', { xPercent: -0 })
+        gsap.set('.row', { xPercent: 0 })
       }
       return
     }
