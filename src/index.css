@@ -8,9 +8,8 @@
   --blue-light: hsla(231, 91%, 56%, 1);
   --mint-light: hsla(170, 45%, 58%, 1);
   --yellow: hsla(39, 100%, 66%, 1);
-
   --indent: 63px;
-  --content-margin-top: 156.2px;
+  --content-margin-top: 156px;
 }
 
 * {

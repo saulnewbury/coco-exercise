@@ -7,8 +7,9 @@ import Trifold from '../../assets/images/trifold.svg'
 
 import gsap from 'gsap'
 
-const MobileMenu = ({ open }) => {
+const MobileMenu = ({ isVisible, toggleMobileMenu }) => {
   const wrapper = useRef()
+  const q = gsap.utils.selector(wrapper)
   const firstTime = useRef(true)
   // const firstTime = !wrapper.current
   // const firstTime = useRef(true)
@@ -16,17 +17,17 @@ const MobileMenu = ({ open }) => {
   useLayoutEffect(() => {
     if (firstTime.current) {
       firstTime.current = false
-      if (open) {
-        gsap.set('.row', { xPercent: -0 })
+      if (isVisible) {
+        gsap.set(q('.row'), { xPercent: -0 })
       } else {
-        gsap.set('.row', { xPercent: -102 })
+        gsap.set(q('.row'), { xPercent: -102 })
       }
       return
     }
 
-    if (open) {
+    if (isVisible) {
       gsap.fromTo(
-        '.row',
+        q('.row'),
         { xPercent: -102 },
         {
           xPercent: 0,
@@ -38,7 +39,7 @@ const MobileMenu = ({ open }) => {
       })
     } else {
       gsap.fromTo(
-        '.row',
+        q('.row'),
         { xPercent: 0 },
         {
           xPercent: -102,
@@ -49,7 +50,7 @@ const MobileMenu = ({ open }) => {
         backgroundColor: 'hsla(0, 0%, 0%, 0)'
       })
     }
-  }, [open, firstTime])
+  }, [isVisible, firstTime])
 
   return (
     // ${open ? 'open' : ''}
@@ -57,40 +58,40 @@ const MobileMenu = ({ open }) => {
       <div className="mobile-menu-inner">
         <div className="row">
           <div className="nav-link border mbr">
-            <Link>
+            <Link to="la-campanya" onClick={toggleMobileMenu} className="link">
               <span>La Companya</span>
             </Link>
           </div>
         </div>
         <div className="row">
           <div className="nav-link border mbr">
-            <Link>
+            <Link className="link">
               <span>Com Participar</span>
             </Link>
           </div>
         </div>
         <div className="row">
           <div className="nav-link border mbr">
-            <Link>
+            <Link className="link">
               <span>Premis</span>
             </Link>
           </div>
         </div>
         <div className="row">
           <div className="nav-link border mbr">
-            <Link>
+            <Link className="link">
               <span>Servei Personalitzat</span>
             </Link>
           </div>
         </div>
         <div className="row">
           <div className="nav-link left border mbr">
-            <Link>
+            <Link className="link">
               <span>Comparteix</span>
             </Link>
           </div>
           <div className="nav-link right border mbr ruta-del-comerç">
-            <Link>
+            <Link className="link">
               <span>
                 <img src={Trifold} alt="Trifold Icon" />
               </span>

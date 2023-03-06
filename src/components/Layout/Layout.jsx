@@ -7,19 +7,20 @@ import Footer from '../Footer/Footer'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
 const Layout = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
 
-  function toggleMobileMenu() {
-    setIsOpen(!isOpen)
+  function toggleMobileMenu(e) {
+    if (e.currentTarget.dataset.el === 'logo' && !isVisible) return
+    setIsVisible(!isVisible)
   }
 
   return (
     <div className="layout border">
       <div className="black-strip"></div>
-      <Topbar toggleMobileMenu={toggleMobileMenu} />
+      <Topbar isVisible={isVisible} toggleMobileMenu={toggleMobileMenu} />
       <Outlet />
       <Footer />
-      <MobileMenu open={isOpen} />
+      <MobileMenu isVisible={isVisible} toggleMobileMenu={toggleMobileMenu} />
     </div>
   )
 }
